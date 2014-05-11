@@ -21,3 +21,10 @@ You can use python or ruby server to run the project, but I prefer node.js:
 
     http-server . -p 3333
 
+
+ScreenCapture
+-------------
+
+I write a simple script to capture the dataviz I create, make sure that you install `phantomjs`
+
+    phantomjs html_to_png.js http://x:8080/ ./pic/color

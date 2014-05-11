@@ -33,7 +33,7 @@ d3.csv("agricultural_choropleth/us-ag-productivity-2004.csv", function(csvData){
     
     d3.json('../us-states.json', function(mapData){
         //we will change map the mapData to a mixed array with geodata and colorData 
-        var newFeatures = _.map(mapData.features, function(geoFeatures){
+        mapData.features = _.map(mapData.features, function(geoFeatures){
             var csvObj = _.find(csvData, function(csvD){
                 return csvD.state === geoFeatures.properties.name
             })
@@ -43,7 +43,6 @@ d3.csv("agricultural_choropleth/us-ag-productivity-2004.csv", function(csvData){
 
             return geoFeatures
         })
-        mapData.features = newFeatures
         
         //mapData.features is every state and its value
         svg.selectAll("path")
