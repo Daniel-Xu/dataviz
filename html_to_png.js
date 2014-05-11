@@ -16,7 +16,7 @@ if(args.length < 3){
     console.log("please pass two more parameters: 'url address' and 'picture name'")
 }
 page.viewportSize = {width: defaultSize.width, height: defaultSize.height}
-page.zoomFactor = 0.5
+page.zoomFactor = 0.8
 
 page.open(address, function() {
     page.render(picName+'.png')

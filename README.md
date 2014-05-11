@@ -28,3 +28,12 @@ ScreenCapture
 I write a simple script to capture the dataviz I create, make sure that you install `phantomjs`
 
     phantomjs html_to_png.js http://x:8080/ ./pic/color
+
+
+Strike
+------
+
+1. Agricultural production 2004
+
+![Agricultural](https://raw.githubusercontent.com/Daniel-Xu/daily-dataviz/master/pic/color.png)
+
