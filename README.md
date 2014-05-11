@@ -37,3 +37,6 @@ Strike
 
 ![Agricultural](https://raw.githubusercontent.com/Daniel-Xu/daily-dataviz/master/pic/color.png)
 
+![Wiht population](https://raw.githubusercontent.com/Daniel-Xu/daily-dataviz/master/pic/color_with_popu.png)
+
+
