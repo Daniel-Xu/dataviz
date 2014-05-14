@@ -81,8 +81,32 @@ d3.csv("agricultural_choropleth/us-ag-productivity-2004.csv", function(csvData){
                   fill: "yellow", 
                   opacity: 0.75
               })
+              .on("mouseover", mouseoverHandler)
+              .on("mouseout", mouseoutHandler)
           })
     })
 
 })
            
+function mouseoverHandler(d, i) 
+{
+    svg.append("text")
+        .attr({
+            class: "city",
+            x: function(){ return projection([d.lon, d.lat])[0]},
+            y: function(){ return projection([d.lon, d.lat])[1]}
+        })
+        .text(function(){ 
+            return d.place +" has population: " + d.population
+        })
+        .style({
+            "font-size": 24,
+            //stroke     : "#00ff00",
+            fill       : "#0000ff"
+        })
+}
+
+function mouseoutHandler(d, i)
+{
+    d3.select(".city").remove()
+}

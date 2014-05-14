@@ -30,7 +30,7 @@ I write a simple script to capture the dataviz I create, make sure that you inst
     phantomjs html_to_png.js http://x:8080/ ./pic/color
 
 
-Strike
+Streak
 ------
 
 1. Agricultural production 2004
