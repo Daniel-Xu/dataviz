@@ -97,7 +97,7 @@ function mouseoverHandler(d, i)
             y: function(){ return projection([d.lon, d.lat])[1]}
         })
         .text(function(){ 
-            return d.place +" has population: " + d.population
+            return "population is: " + d.population 
         })
         .style({
             "font-size": 24,
